@@ -33,3 +33,8 @@ for (let i = 0; i < objectsArray.length; i++){
     avgAge = totalAge / objectsArray.length
    
 } console.log(avgAge);
+
+
+let reverseCsv = [] // creates an array to store csv data in
+let header = Object.keys(objectsArray[0]).join(",") // creates a header this is = the key names for the first row of the csv
+console.log(header);
