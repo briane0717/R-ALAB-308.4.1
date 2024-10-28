@@ -25,7 +25,6 @@ console.log(objectsArray);
 
 let totalAge = 0;
 
-
 for (let i = 0; i < objectsArray.length; i++){
     let age = objectsArray[i].age * 1
     console.log(age);
@@ -42,6 +41,7 @@ reverseCsv.push(header)
 for (let i = 0;  i< objectsArray.length; i++){ // loops through each row
     let values = Object.values(objectsArray[i]).join(",") // takes the value of the key of the index of that row and joins them together
     reverseCsv.push(values) // adds values to the reverse csv
-    console.log("====================================");
-    console.log(reverseCsv);
+
+    let finalCsv = reverseCsv.join("\\n") // joins all values to one line separated by \n"
+console.log(finalCsv);
 }
