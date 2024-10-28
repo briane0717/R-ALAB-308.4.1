@@ -30,5 +30,6 @@ for (let i = 0; i < objectsArray.length; i++){
     let age = objectsArray[i].age * 1
     console.log(age);
     totalAge += age;
-    console.log(totalAge);
-}
+    avgAge = totalAge / objectsArray.length
+   
+} console.log(avgAge);
