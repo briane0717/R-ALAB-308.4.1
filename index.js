@@ -7,3 +7,18 @@ for(i = 0; i < numRow; i++){
     test.push(splitRows[i].split(","));
 }
 console.log(test);
+
+let numColumns = test[0].length;
+let objectsArray = [];
+for (let i = 1; i< test.length; i++ ){
+    let csv = {};
+    console.log(test[i]);
+    for ( let j = 0; j < numColumns; j++){
+    let header = (test[0][j]);
+    let keys = header.toLowerCase()
+    csv[keys] = test[i][j]
+    console.log(keys);
+    }
+objectsArray.push(csv);
+}
+console.log(objectsArray);
