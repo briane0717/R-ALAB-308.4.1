@@ -27,6 +27,8 @@ let totalAge = 0;
 
 
 for (let i = 0; i < objectsArray.length; i++){
-    let age = objectsArray[i].age
+    let age = objectsArray[i].age * 1
     console.log(age);
+    totalAge += age;
+    console.log(totalAge);
 }
