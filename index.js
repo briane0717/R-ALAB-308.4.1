@@ -36,5 +36,11 @@ for (let i = 0; i < objectsArray.length; i++){
 
 
 let reverseCsv = [] // creates an array to store csv data in
-let header = Object.keys(objectsArray[0]).join(",") // creates a header this is = the key names for the first row of the csv
-console.log(header);
+let header = Object.keys(objectsArray[0]).join(",") // creates a header that is = the key names for the first row of the csv
+reverseCsv.push(header)
+console.log(reverseCsv);
+
+for (let i = 0;  i< objectsArray.length; i++){ // loops through each row
+    let values = Object.values(objectsArray[i]).join(",") // takes the value of the key of the index of that row and joins them together
+    console.log(values);
+}
