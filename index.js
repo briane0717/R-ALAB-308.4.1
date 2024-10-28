@@ -22,3 +22,11 @@ for (let i = 1; i< test.length; i++ ){
 objectsArray.push(csv);
 }
 console.log(objectsArray);
+
+let totalAge = 0;
+
+
+for (let i = 0; i < objectsArray.length; i++){
+    let age = objectsArray[i].age
+    console.log(age);
+}
